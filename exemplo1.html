@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Olá mundo!</title>
+    <script>
+      let a = "carro";
+      var b = 1;
+      const c = "casa";
+      //let e const p marioria;
+
+      function clicknoBot() {
+        alert("Olá, Mundo!");
+      }
+
+      function atualiza() {
+        let input = document.getElementById("meuinput");
+        let p = document.getElementById("para");
+
+        p.textContent = input.value;
+
+        console.log("oi");
+      }
+    </script>
+
+    <style>
+      body {
+        background-color: #ccc;
+        margin: 2%;
+      }
+      h1 {
+        color: #fff;
+        font-family: tahoma;
+        font-size: 35px;
+      }
+      p {
+        text-align: center;
+      }
+      img {
+        max-width: 100%;
+        border: solid 3px black;
+        padding: 3px;
+        margin-top: 12px;
+        margin-bottom: 20px;
+      }
+
+      .margem-minima {
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+
+      .margem-minima.input,
+      .margem-minima.select,
+      .margem-minima.button {
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Elemento padrão de Título(h1 até h5)</h1>
+    <h2>titulo dois</h2>
+    <p id="para">Qualquer texto</p>
+    <span> Informação</span>
+    <div>
+      Define um grupo de elementos
+      <h1>Titulo dentro da div</h1>
+      <h2>titulo dois dentro da div</h2>
+      <p>Qualquer texto dentro da div</p>
+      <span> Informação dentro da div</span>
+    </div>
+    <img src="img.png" />
+    <div class="margem-minima">
+      <a href="https://www.google.com.br"> Link para o google</a>
+    </div>
+    <div claas="margem-minima">
+      <input id="meuinput" type="text" oninput="atualiza()" />
+    </div>
+    <div class="margem-minima">
+      <select>
+        <options>Opção 1</options>
+        <options>Opção 2</options>
+        <options>Opção 3</options>
+      </select>
+    </div>
+    <div class="margem-minima">
+      <button onClick="clicknoBot()">Clique no Botão</button>
+    </div>
+  </body>
+</html>
